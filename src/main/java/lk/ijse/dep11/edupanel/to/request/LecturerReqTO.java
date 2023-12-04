@@ -16,24 +16,8 @@ import javax.validation.constraints.Pattern;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LecturerReqTO {
-//    @NotBlank(message = "name can't be empty")
-//    @Pattern(regexp = "^[A-Za-z]+$", message = "In valid Message")
-//    private String name;
-//    @NotBlank(message = "Designation cant be empty")
-//    @Length(min = 2, message = "Invalid Designation")
-//    private String designation;
-//    @NotBlank(message = "Qualification cant be empty")
-//    @Length(min = 2, message = "Invalid qualification")
-//    private String qualification;
-//    @NotBlank(message = "type cant be empty")
-//    @Pattern(regexp = "^(full-time|part-time)$", flags = Pattern.Flag.CASE_INSENSITIVE, message = "invalid pattern")
-//    private String type;
-//    @LecturerImage
-//    private MultipartFile picture;
-//    @Pattern(regexp = "^http[s]?://.+$", message = "Invalid linkedin url")
-//    private String linkedIn;
     @NotBlank(message = "Name can't be empty")
-    @Pattern(regexp = "^[A-Za-z ]+$",message = "Invalid name: {value}") // here the value is up cumming to name
+    @Pattern(regexp = "^[A-Za-z ]+$",message = "Invalid name: {value}") // here the value is up cumming name
     private String name;
     @NotBlank(message = "Designation can't be empty")
     @Length(min = 2,message = "Invalid designation: ${value}")
